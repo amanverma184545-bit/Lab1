@@ -25,6 +25,15 @@ const toWords = (digit)=>{
 
     }
 };
-    console.log(toWords(5));
-    console.log(toWords(3));
-    console.log(toWords(7));
+    // console.log(toWords(5));
+    // console.log(toWords(3));
+    // console.log(toWords(7));
+
+const rollNum = "250031000497";
+const digits = String(rollNum).split("");
+console.log(digits);
+let inWords = "";
+digits.forEach((d) => {
+    inWords += " " + toWords(Number(d));
+});
+console.log(inWords);    
